@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hi</title>
+    <link rel="shortcut icon" href="global_img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="image/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="global_css/style.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+</head>
+
+<body>
+	<input type="checkbox" id="section-left-handler" class="sidebar-handler sidebar-handler-overlay">
+	<label for="section-left-handler" class="button"><i class="fa fa-bars"></i></label>
+
+	<div id="main">
+        <section id="topper">
+        <h1>Pulling the latest Images from any sub reddit
+            <img id="alien" src="http://www.redditstatic.com/about/assets/reddit-alien.png" alt="Click to clear" title="Click to clear"></h1>
+        <select id="foo">
+            <option value="http://www.reddit.com/r/pics/.json?jsonp=?">pics</option>
+            <option value="http://www.reddit.com/r/funny/.json?jsonp=?">funny</option>
+            <option value="http://www.reddit.com/r/gifs/.json?jsonp=?">gifs</option>
+            <option value="http://www.reddit.com/r/japanpics/.json?jsonp=?">Japan pics</option>
+            <option value="http://www.reddit.com/r/spaceporn/.json?jsonp=?">Space porn</option>
+            <option value="http://www.reddit.com/r/SkyPorn/.json?jsonp=?">Sky Porn</option>
+             <option value="http://www.reddit.com/r/VillagePorn/.json?jsonp=?">Village Porn</option>
+            <option value="http://www.reddit.com/r/MilitaryPorn/.json?jsonp=?">Military Porn</option>
+            <option value="http://www.reddit.com/r/wtf/.json?jsonp=?">WTF (!NSFW!)</option>
+        </select>
+        <button id="go">Go</button>
+        <script type="text/javascript">
+           $(document).ready(function() {
+              
+           	$("#go").click(function() {
+                $( "#image" ).empty(); 
+           		var value = $("#foo :selected").val();
+           		$.getJSON(value, function(data) {
+           			$.each(data.data.children, function(i, item) {
+           				$("<img/>").attr("src", item.data.url).appendTo("#image");
+           			});
+           		});
+           	});
+               
+           	$("#alien").click(function() {
+                $( "#image" ).empty(); 
+           	});               
+               
+           });
+    </script>
+            </section>
+        <div id="image">
+        </div>
+
+	<div id="overlay"></div>
+</div>
+
+	<section id="section-left">
+		<label for="section-left-handler" class="button"><i class="fa fa-times-circle-o"></i></label>
+		<nav id='cssmenu'>
+			<br><br><br>
+			<ul>
+				<li class='active'><a href='index.html'><span>Home</span></a></li>
+				<li><a href='me.html'><span>Me</span></a></li>
+				<li><a href='image.html'><span>Image</span></a></li>
+                <li><a href='Fill_Light/index.html'><span>「 &#12527;&#12451;&#12523;&#12521;&#12452;&#12488;」</span></a></li>
+				<li class='last'><a href='#'><span>Contact</span></a></li>
+			</ul>
+		</nav>
+       
+        <div id="social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-paypal"></i></a>
+        </div>
+	</section>
+
+
+</body>
+
+</html>
