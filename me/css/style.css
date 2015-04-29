@@ -247,6 +247,23 @@ padding: inherit;
 	background: none;
 }
 
+a:link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
 @media (max-width: 1199px) {
 	.container {
 		width: auto;
