@@ -21,7 +21,6 @@ html, body, article, .glass::before {
 /* BACKGROUNDS */
 body {
   background-image: url('../img/back.jpg');
-  background-size: cover;
 }
 
 
