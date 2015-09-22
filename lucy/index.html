@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+    <meta charset="utf-8">
+    <title>Hi</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="http://example.com/spiral-pattern.ico">
+     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    </head>
+    
+    <body>
+    
+ <script>
+//Array of images which you want to show: Use path you want.
+var images=new Array('img/back1.jpg','img/back2.jpg','img/back3.jpg');
+var nextimage=0;
+doSlideshow();
+
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('body')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(500,function(){
+        setTimeout(doSlideshow,5000);
+    });
+}
+</script>
+    
+    <nav >
+        <h1><a href="index.html"><img src="img/Logo1.png" alt="Pubic Hair"></a></h1>
+        <br>
+        <ul id="cssmenu">
+        <li class='active'><a href='blog.html'><span>Blog</span></a></li>
+            <li class='active'><a href='about.html'><span>About</span></a></li>
+            <li class='active'><a href='contact.html'><span>Contact</span></a></li>
+        </ul>
+        <div id="social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-paypal"></i></a>
+        </div>
+        </nav>
+    
+    
+    </body>
+</html>

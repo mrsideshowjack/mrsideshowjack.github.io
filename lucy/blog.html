@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Hi</title>
+    <link rel="shortcut icon" href="http://example.com/spiral-pattern.ico">
+     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    </head>
+    
+    <body>
+    
+ <script type="text/javascript">
+//Array of images which you want to show: Use path you want.
+var images=new Array('img/back1.jpg','img/back2.jpg','img/back3.jpg');
+var nextimage=0;
+doSlideshow();
+
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('body')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(500,function(){
+        setTimeout(doSlideshow,5000);
+    });
+}
+</script>
+    
+    <nav>
+        <h1><a href="index.html"><img src="img/Logo1.png" alt="Pubic Hair"></a></h1>
+        <br>
+        <ul id="cssmenu">
+        <li class='active'><a href='blog.html'><span>Blog</span></a></li>
+            <li class='active'><a href='about.html'><span>About</span></a></li>
+            <li class='active'><a href='contact.html'><span>Contact</span></a></li>
+        </ul>
+        <div id="social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-paypal"></i></a>
+        </div>
+        </nav>
+        
+        <section id="container">
+            
+            <article>
+                <h2>About Lucy Moore</h2>
+                <img alt="me" src="http://www.volpinprops.com/wp-content/uploads/2012/06/HarrisonKrixsm.jpg" height="416">
+                <p>I’ve been building things for as long as I can remember. Propmaking has been a hobby and borderline obsession of mine since the end of 2007. Halloween was a gateway drug back then, and ever since I’ve spent my evenings and free time sculpting, molding, sanding, and carving. I tend to mainly skew towards replicas from video games and sci-fi, because everyone loves a good fantasy rifle</p>
+            </article>
+            
+            <article>
+                <h2>About Lucy Moore</h2>
+                <img alt="me" src="http://www.volpinprops.com/wp-content/uploads/2012/06/HarrisonKrixsm.jpg" height="416">
+                <p>I’ve been building things for as long as I can remember. Propmaking has been a hobby and borderline obsession of mine since the end of 2007. Halloween was a gateway drug back then, and ever since I’ve spent my evenings and free time sculpting, molding, sanding, and carving. I tend to mainly skew towards replicas from video games and sci-fi, because everyone loves a good fantasy rifle</p>
+            </article>
+            
+            <article>
+                <h2>About Lucy Moore</h2>
+                <img alt="me" src="http://www.volpinprops.com/wp-content/uploads/2012/06/HarrisonKrixsm.jpg" height="416">
+                <p>I’ve been building things for as long as I can remember. Propmaking has been a hobby and borderline obsession of mine since the end of 2007. Halloween was a gateway drug back then, and ever since I’ve spent my evenings and free time sculpting, molding, sanding, and carving. I tend to mainly skew towards replicas from video games and sci-fi, because everyone loves a good fantasy rifle</p>
+            </article>
+            
+        
+        </section>
+    
+    
+    </body>
+</html>
