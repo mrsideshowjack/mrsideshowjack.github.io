@@ -13,6 +13,8 @@ h2{
 color: #10b3b1;
 }
 
+/*=======Nav bar======*/
+
 nav{
  background:rgba(255, 255, 255, 0.8);
     width:250px;
@@ -69,6 +71,8 @@ margin: 5px;
 color: #10b3b1;
 }
 
+/*============main content============*/
+
 #container {
     background:rgba(255, 255, 255, 0.8);
     margin-left: 21em;
@@ -83,11 +87,24 @@ padding: 20px;
 
 article img{
 padding: 10px;
-max-width: 630px;
+max-width: 100%;
+     
+}
+
+
+.date {
+    font-size: 13px;
+    color: dimgray;
+}
+
+.BlogPost {
+border-bottom: 2px  solid #9d9d9d;
 }
 
 
 
+
+/*=======Email form=======*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
@@ -111,13 +128,12 @@ max-width: 630px;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  border: 3px solid rgba(0, 0, 0, 0);
+  border: 3px solid rgba(214, 41, 41, 0);
 }
 
 .feedback-input:focus {
   background: #fff;
-  box-shadow: 0;
-  border: 3px solid #3498db;
+  border: 3px solid #10b3b1;
   color: #10b3b1;
   outline: none;
   padding: 13px 13px 13px 54px;
@@ -220,9 +236,4 @@ textarea:focus {
 .submit:hover .ease {
   width: 100%;
   background-color: white;
-}
-
-.date {
-    font-size: 13px;
-    color: dimgray;
 }
