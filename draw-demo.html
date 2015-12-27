@@ -1,7 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>draw-demo</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <style type="text/css">
   body{
@@ -28,7 +31,7 @@
   context = document.getElementById('canvasInAPerfectWorld').getContext("2d");
 
 
-  $('#canvasInAPerfectWorld').mousedown(function(e){
+  $('#canvasInAPerfectWorld').on("vmousedown", function(e){
   var mouseX = e.pageX - this.offsetLeft;
   var mouseY = e.pageY - this.offsetTop;
     
@@ -37,18 +40,18 @@
   redraw();
 });
 
-  $('#canvasInAPerfectWorld').mousemove(function(e){
+  $('#canvasInAPerfectWorld').on("vmousemove",function(e){
   if(paint){
     addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
     redraw();
   }
 });
 
-  $('#canvasInAPerfectWorld').mouseup(function(e){
+  $('#canvasInAPerfectWorld').on("vmouseup",function(e){
   paint = false;
 });
 
-  $('#canvasInAPerfectWorld').mouseleave(function(e){
+  $('#canvasInAPerfectWorld').on("vmouseleave",function(e){
   paint = false;
 });
 
