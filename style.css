@@ -482,6 +482,9 @@ header .toggle-menu{
     .splash{
         padding: 100px 10px 40px 10px;
     }
+    .splash h1{
+        font-size: 3em;
+    }
     .about img{
         display: none;
     }
@@ -521,13 +524,19 @@ header .toggle-menu{
         top: 13px;
         font-size: 28px;
     }
-
+    .projects .project p{
+        padding:   0 10px 0 10px;
+        line-height: 1.2em;
+    }
     .social h1{
         display: block;
     }
     .social h1,
     .social a{
         font-size: 1.7em;
+    }
+    .contact h2{
+        font-size: 1.5em;
     }
     .contact .input{
         display: block;
