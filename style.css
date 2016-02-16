@@ -69,10 +69,12 @@ img{
 }
 
 ::selection {
-  background: #eee; /* WebKit/Blink Browsers */
+  background: #212121; /* WebKit/Blink Browsers */
+  color: #1EA6B3;
 }
 ::-moz-selection {
-  background: #eee; /* Gecko Browsers */
+  background: #212121; /* Gecko Browsers */
+  color: #1EA6B3;
 }
 
 /* End Resets, Clears & Defaults */
@@ -103,10 +105,6 @@ section{
 .btn:hover{
     text-decoration: none;
     background: rgba(255,255,255,0.1);
-}
-.btn.yellow{
-    color: #1EA6B3;
-    border: 1px solid #1EA6B3;
 }
 .btn.smaller{
     padding: 10px 25px;
@@ -243,8 +241,8 @@ header .toggle-menu{
 .about{
     background-color: #E6E6E6; /*FALLBACK*/
     background: url(img/me.jpg), linear-gradient(90deg, #FFFFFF, #DCDCDC, #A5A5A5) no-repeat center center fixed; 
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-blend-mode: soft-light;
@@ -372,9 +370,6 @@ header .toggle-menu{
 .projects a{
     text-decoration: none;
 }
-
-
-
 .contact{
     background: #1EA6B3;
     position: relative;
@@ -456,6 +451,10 @@ header .toggle-menu{
         position: relative;
         top: 0;
         transform: none;
+    }
+    .about h1,
+    .about h3{
+        text-align: center;
     }
     .about img{
         right: 65%;
