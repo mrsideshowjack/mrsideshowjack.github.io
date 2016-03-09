@@ -370,6 +370,13 @@ header .toggle-menu{
 .projects a{
     text-decoration: none;
 }
+.projects #stitch {
+    color: #1EA6B3;
+    transition: all .2s ease-in-out;
+}
+.projects #stitch:hover{
+    color: #71C7CF;
+}
 .contact{
     background: #1EA6B3;
     position: relative;
