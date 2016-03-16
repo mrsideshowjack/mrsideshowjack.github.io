@@ -240,7 +240,8 @@ header .toggle-menu{
 
 .about{
     background-color: #E6E6E6; /*FALLBACK*/
-    background: url(img/me.jpg), linear-gradient(90deg, #FFFFFF, #DCDCDC, #A5A5A5) no-repeat center center fixed; 
+    background: url(img/me.jpg) no-repeat center center fixed,
+         linear-gradient(90deg, #FFFFFF, #DCDCDC, #A5A5A5); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -450,14 +451,14 @@ header .toggle-menu{
         padding: 0 10px;
     }
     .splash{
-        height: auto;
+        height: 70vh;
         padding: 150px 10px 80px 10px;
         text-align: center;
     }
     .splash .container{
-        position: relative;
+        /*position: relative;
         top: 0;
-        transform: none;
+        transform: none;*/
     }
     .about h1,
     .about h3{
@@ -486,6 +487,7 @@ header .toggle-menu{
         padding: 40px 10px;
     }
     .splash{
+        height: 90vh;
         padding: 100px 10px 40px 10px;
     }
     .splash h1{
@@ -529,6 +531,9 @@ header .toggle-menu{
         right: 10px;
         top: 13px;
         font-size: 28px;
+    }
+    .projects .project{
+        margin: 1em;
     }
     .projects .project p{
         padding:   0 10px 0 10px;
