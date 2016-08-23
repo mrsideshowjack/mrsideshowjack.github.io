@@ -121,7 +121,8 @@ header{
     width: 100%;
     z-index: 200;
 }
-header .logo{
+
+header .logo>h1{
     float: left;
     font-family: 'Open Sans', sans-serif;
     padding: 13px 0;
@@ -130,12 +131,14 @@ header .logo{
     font-size: 22px;
     line-height: 30px;
     margin: 0;
+    display: inline-block;
 }
-header .logo .fa{
-    font-size: 16px;
-    position: relative;
-    top: -1px;
-    margin-right: 7px;
+header .logo-img{
+    float: left;
+    max-height: 35px;
+    max-width: 35px;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 
 header nav{
@@ -366,7 +369,7 @@ header .toggle-menu{
     padding:   0 40px 0 40px;
 }
 .projects .project:hover{
-    box-shadow:0 0 7px #1ea6b3;
+    box-shadow:0 0 25px #1ea6b3;
 }
 .projects a{
     text-decoration: none;
@@ -383,6 +386,7 @@ header .toggle-menu{
     position: relative;
     overflow: hidden;
     text-align: center;
+    padding-bottom: 0;
 }
 .contact:after{
     content: "";
@@ -442,6 +446,10 @@ header .toggle-menu{
     margin-bottom: 40px;
 }
 
+.footer-img{
+    margin: 13em 0 1em 0;
+    max-width: 200px;
+}
 
 @media (max-width: 800px){
     section{
