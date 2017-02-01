@@ -46,7 +46,98 @@ section {
 section h2 + p:first-of-type {
     font-size: 1.25em;
 }
+
+header{
+    background: #222;
+    padding: 0 20px;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+header .logo>h1{
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    color: #1EA6B3;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+    display: inline-block;
+}
+header .logo-img{
+    float: left;
+    max-height: 25px;
+    /*max-width: 35px;*/
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+header nav{
+    float: right;
+}
+
+.menuItems {
+padding: 0;
+ margin: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.menuItems * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menuItems li {
+  display: inline-block;
+  float: left;
+  list-style: outside none none;
+  margin: 0.7em 1.5em;
+  padding: 0;
+}
+.menuItems a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.menuItems a:before,
+.menuItems a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #1EA6B3;
+  width: 0;
+}
+.menuItems a:before {
+  top: 0;
+  right: 0;
+}
+.menuItems a:after {
+  bottom: 0;
+  left: 0;
+}
+.menuItems a:hover,
+.menuItems .current a {
+  color: #ffffff;
+}
+.menuItems a:hover:before,
+.menuItems .current a:before,
+.menuItems a:hover:after,
+.menuItems .current a:after {
+  width: 100%;
+}
+
+header .toggle-menu{
+    display: none;
+}
+
 .splash {
+	max-height: 85vh;
     background: #3a397b;
     background: -moz-linear-gradient(45deg, #3a397b 0%, #3a397b 15%, #00a9cf 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, #3a397b), color-stop(15%, #3a397b), color-stop(100%, #00a9cf));
@@ -54,6 +145,15 @@ section h2 + p:first-of-type {
     background: -o-linear-gradient(45deg, #3a397b 0%, #3a397b 15%, #00a9cf 100%);
     background: -ms-linear-gradient(45deg, #3a397b 0%, #3a397b 15%, #00a9cf 100%);
     background: linear-gradient(45deg, #3a397b 0%, #3a397b 15%, #00a9cf 100%);
+}
+.splash .caption{
+    text-align: center;
+    font-size: 1.8em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #fff;
 }
 .splash img {
     display: block;
@@ -85,7 +185,7 @@ article {
     margin: 0em auto;
 }
 .about {
-    /*    background-color: #E6E6E6;
+/*        background-color: #E6E6E6;
     background: url('../images/building.jpg') no-repeat right center ,
          linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0.9), rgba(255,255,255,0.1)); 
     background-size: 25%;
@@ -107,10 +207,66 @@ article {
     font-style: italic;
     margin-bottom: 3em;
 }
+
+.about .jouney{
+    margin-bottom: 1.5em;
+ display: box;
+display: flex;
+-webkit-box-lines: multiple;
+-moz-box-lines: multiple;
+-o-box-lines: multiple;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-pack: center;
+-moz-box-pack: center;
+-o-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+}
+.about .jouney .jouney-item{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+.about .jouney .jouney-item .jouney-arrow{
+    display: block;
+float: right;
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 25px solid #212121;
+  position: relative;
+  top:-60%;
+  left: 10%;
+}
+.about .jouney .jouney-img{
+    max-height: 250px;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+.about .jouney .jouney-caption{
+    display: block;
+}
 .about img {
-    position: absolute;
+/*    position: absolute;
     top: 100px;
-    right: 55%;
+    right: 55%;*/
     /* float: right;
     max-width: 33vw;
     padding-left: 10px;*/
@@ -232,6 +388,7 @@ article {
     -webkit-justify-content: center;
     justify-content: center;
     align-content: space-around;
+    align-items: center;
     position: relative;
     overflow: hidden;
     z-index: 2;
@@ -254,11 +411,14 @@ article {
     margin: 2em auto;
     min-width: 400px;
     max-width: 40vw;
-    -webkit-box-shadow: 4px 2px 20px -6px rgba(0, 0, 0, 0.73);
+    /*-webkit-box-shadow: 4px 2px 20px -6px rgba(0, 0, 0, 0.73);
     -moz-box-shadow: 4px 2px 20px -6px rgba(0, 0, 0, 0.73);
-    box-shadow: 4px 2px 20px -6px rgba(0, 0, 0, 0.73);
+    box-shadow: 4px 2px 20px -6px rgba(0, 0, 0, 0.73);*/
 }
-.social .twitter {} .partners {
+.social .twitter {
+
+} 
+.partners {
     background-color: #fff;
     text-align: center;
     position: relative;
