@@ -243,7 +243,7 @@ header .toggle-menu{
 
 .about{
     background-color: #E6E6E6; /*FALLBACK*/
-    background: url(img/me.jpg) no-repeat center center fixed,
+    background: url(img/me.jpg) no-repeat center center,
          linear-gradient(90deg, #FFFFFF, #DCDCDC, #A5A5A5); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
