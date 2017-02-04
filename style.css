@@ -333,6 +333,17 @@ header .toggle-menu{
 
 .projects{
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.projects:after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 50%;
+    top: 30%; right: 0px; bottom: 0px; left: 0px;
+    background: rgba(1,1,1,0.2);
+    z-index: -1;
 }
 .projects > div{
     display: -webkit-box;
@@ -348,6 +359,7 @@ header .toggle-menu{
     align-content: space-around;
 }
 .projects .project{
+    background-color: #fff;
     max-width: 25em;
     margin: 2em;
     overflow: hidden;
