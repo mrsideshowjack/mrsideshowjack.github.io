@@ -40,8 +40,8 @@
 }
 @media (max-width: 600px){
     #logo{
-    max-width: 70vw;
-    margin-top: 30vh;
+    max-width: 75vw;
+    margin-top: 15vh;
     }
     section{
         /*padding: 40px 10px;*/
@@ -92,18 +92,32 @@
     }
     header .toggle-menu{
         display: block;
+        margin: 0.2em;
         color: #fff;
         float: right;
 /*        position: absolute;
         right: 0;
         top: 0;*/
-        font-size: 3.5em;
+        font-size: 3em;
+    }
+    #about img, #GDPR img{
+    max-height: 250px;
+    margin-bottom: 2em;
+    }
+    #blurb{ 
+    bottom: 5em;
+    }
+    #GDPR article, #about article{
+        max-width: 88%;
     }
     #GDPR article{
         margin-right: auto; 
     }
     #PIA article{
         max-width: 80vw;
+    }
+    #how-it-works ul{
+      border: none;
     }
     .contact h2{
         font-size: 1.5em;
