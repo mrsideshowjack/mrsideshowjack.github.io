@@ -13,6 +13,12 @@
          top: initial; 
         bottom: 2em;
     }
+    #partner-imgs i{
+        display: none;
+    }
+    #partner-imgs li{
+        flex:0;
+    }
     #problem-answer div img{
         display: none;
     }
@@ -64,7 +70,7 @@
         margin: 0px;
         float: none;
         position: fixed;
-        top: 56px;
+        top: 10vh;
         left: -100%;
         bottom: 0;
         width: 100%;
@@ -74,6 +80,7 @@
         transition: 200ms;
     }
     header nav.visible{
+        z-index: 1;
         left: 0px;
     }
     header nav ul li{
@@ -100,13 +107,18 @@
         top: 0;*/
         font-size: 3em;
     }
+    #blurb{ 
+    bottom: 5em;
+    }
+
+    #about p, #GDPR p{
+        max-width: 100%;
+    }
     #about img, #GDPR img{
     max-height: 250px;
     margin-bottom: 2em;
     }
-    #blurb{ 
-    bottom: 5em;
-    }
+
     #GDPR article, #about article{
         max-width: 88%;
     }
@@ -118,9 +130,6 @@
     }
     #how-it-works ul{
       border: none;
-    }
-    .contact h2{
-        font-size: 1.5em;
     }
     .contact .input{
         display: block;

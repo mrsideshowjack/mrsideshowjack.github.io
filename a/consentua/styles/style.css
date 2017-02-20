@@ -137,11 +137,12 @@ padding: 0;
 }
 #splash{
 	height: 100vh;
-	background-color: #9A1144;
-	color: #fff;
+  width: 100%;
+  min-height:56px;
+  background-color: #9A1144;
+  color: #fff;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 30;
   overflow: hidden;
 }
@@ -250,7 +251,6 @@ padding: 0;
 }
 #partner-imgs{
   /*height: 140px;*/
-  overflow-x: hidden;
   display: flex;
   justify-content:center;
   align-content:center;

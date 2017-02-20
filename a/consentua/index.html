@@ -53,7 +53,6 @@
     <script type="text/javascript" src="old/template/js/scrollmagic/ScrollMagic.js"></script>
     <script type="text/javascript" src="old/template/js/scrollmagic/animation.gsap.js"></script>
     <script type="text/javascript" src="old/template/js/scrollmagic/debug.addIndicators.js"></script> 
-    <!-- pls -->
 
     <!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
@@ -204,9 +203,9 @@
 		<p>Full linear Consent</p>
 		</span>
 	</div>
-	<div id="video">
-	<span><iframe width="853" height="480" src="https://www.youtube.com/embed/yY1f-VqJ78g?rel=0modestbranding=1" frameborder="0" allowfullscreen></iframe></span>
-	</div>
+<!-- 	<div id="video">
+	<span><iframe width="853" height="480" src="?rel=0modestbranding=1" frameborder="0" allowfullscreen></iframe></span>
+	</div> -->
 	<!-- <h2>Consent Template</h2> -->
 </section>
 
@@ -274,7 +273,14 @@
 </footer>
 
 <script type="text/javascript" src="js/scroll.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+//nav toggle for mobile nav bar button
+document.getElementById("toggle-menu").addEventListener("click", toggleMenu);
+function toggleMenu() {
+	var nav = document.querySelector('nav') // Using a class instead, see note below.
+	nav.classList.toggle('visible');
+}
+</script>
 <!-- https://premium.wpmudev.org/forums/topic/embed-blog-posts-into-a-html-site?utm_expid=3606929-97.J2zL7V7mQbSNQDPrXwvBgQ.0&utm_referrer=https%3A%2F%2Fwww.google.co.uk%2F -->
 
 </body>
