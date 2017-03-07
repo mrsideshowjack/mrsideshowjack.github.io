@@ -9,11 +9,13 @@ permalink:        pretty
 title:            mrsideshowjack
 tagline:          'personal site'
 description:      'personal site'
-url:              http://sideshowjack.uk
-baseurl:          /blog
+url:              http://sideshowjack.uk/blog
+baseurl:          '/blog'
+production_url :  http://mrsideshowjack.github.io.com/blog
+BASE_PATH :       http://sideshowjack.uk/blog
 
 author:
-  name:           'JAck Mason'
+  name:           'Jack Mason'
   url:            https://twitter.com/mrsideshowjack
 
 paginate:         5
