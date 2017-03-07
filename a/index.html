@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hi</title>
+    <link rel="shortcut icon" href="global_img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="index/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="global_css/style.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+    function toggle() {
+  var button = document.querySelector('.toggle');
+  var overlay = document.querySelector('.glass');
+  if (overlay.className === 'glass down') {
+    overlay.className = 'glass up';
+  } else {
+    overlay.className = 'glass down';
+  }
+}
+
+window.onload = function() {
+  /* transition support ~= classList support */
+  var preload = document.querySelector('.preload');
+  preload.classList.remove('preload');
+}
+
+    </script>
+</head>
+
+<body>
+	<input type="checkbox" id="section-left-handler" class="sidebar-handler sidebar-handler-overlay">
+	<label for="section-left-handler" class="button"><i class="fa fa-bars"></i></label>
+
+	<div id="main">
+
+        <section id="content">
+            <article class='glass down'>
+            <h1 class='toggle' onclick='toggle()'>Index.html</h1>
+              <p class='unimportant'><em>This</em> is a testing domain for various sites and other web thingys.</p>
+                <p><em>Lorem ipsum dolor sit amet,</em> consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+</article>
+        <svg xmlns="http://www.w3.org/2000/svg"  version="1.1">
+<defs>
+<filter id="blur">
+<feGaussianBlur stdDeviation="5"/>
+</filter>
+</defs>
+</svg>
+        </section>
+        
+        
+        
+	<div id="overlay"></div>
+</div>
+
+	<section id="section-left">
+		<label for="section-left-handler" class="button"><i class="fa fa-times-circle-o"></i></label>
+		<nav id='cssmenu'>
+			<br><br><br>
+			<ul>
+				<li class='active'><a href='index.html'><span>Home</span></a></li>
+				<li><a href='me.html'><span>Me</span></a></li>
+				<li><a href='image.html'><span>Image</span></a></li>
+                <li><a href='Fill_Light/index.html'><span>「 &#12527;&#12451;&#12523;&#12521;&#12452;&#12488;」</span></a></li>
+				<li class='last'><a href='#'><span>Contact</span></a></li>
+			</ul>
+		</nav>
+       
+        <div id="social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-paypal"></i></a>
+        </div>
+	</section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+    body {
+       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+      height:100%;
+      padding:0;
+      margin:0;
+      overflow-x:hidden;
+      overflow-y:scroll;
+      background-color: #383838;
+    }
+
+
+
+#main {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+#image img{
+    max-width: 80vw;
+    padding: 160px 20px 10px 20px;
+}
+
+select#foo {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 300px;
+    
+}
+
+
+#foo select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
+}
+
+
+
+#go {
+  font-size: 19px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  background: rgb(66, 184, 221);
+  color: white;
+  border-radius: 4px;
+    
+}
+
+#topper {
+    background-color: #151515;
+    height: 150px;
+    width: 100vw;
+    color: white;
+    position: fixed;
+    opacity: 0.8;
+}
+
+#topper img{
+max-height: 50px;
+    cursor: pointer;
+}

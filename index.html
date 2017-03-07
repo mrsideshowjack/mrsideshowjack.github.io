@@ -1,37 +1,213 @@
----
-layout: default
-title: Home
----
+<!-- Thanks for looking at my source code! -->
+<!doctype html>
+<html>
+    <head>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+        <title>Jack Mason</title>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#017783">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#017783">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#017783">
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+            <!-- ****** faviconit.com favicons ****** -->
+        <link rel="shortcut icon" href="/img/icons/icon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/img/icons/icon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/img/icons/icon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/img/icons/icon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/icons/icon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/img/icons/icon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/icon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/icon-16.png">
+    <link rel="apple-touch-icon" href="/img/icons/icon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/icon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/icon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/icon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/icon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/icon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/icon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/icon-180.png">
+    <meta name="msapplication-TileColor" content="#017783">
+    <meta name="msapplication-TileImage" content="/img/icons/icon-144.png">
+    <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
+        <!-- ****** faviconit.com favicons ****** -->
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600 &#124;Josefin+Sans' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <a class="logo" href="#" data-scrollto="splash">
+                <img class="logo-img" src="img/icons/logo.svg"></i>
+                <h1>Jack Mason</h1>
+                </a>
+                <i class="fa fa-bars toggle-menu" aria-hidden="true"></i>
+                <nav>
+                    <ul class="menuItems">
+                        <li><a href="#" data-scrollto="about">About</a></li>
+                        <li><a href="#" data-scrollto="projects">Projects</a></li>
+                        <li><a href="#" data-scrollto="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="splash">
+            <div class="container">
+                <h1>Hi, I'm Jack&#9;<i class="fa fa-hand-paper-o" aria-hidden="true"></i></h1>
+                <h2>I build websites and stuff</h2>
+                <a class="btn" href="#" data-scrollto="projects">See my stuff<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
+
+        <section class="about">
+            <div class="container">
+                <div>
+                    <h1>About me</h1>
+                    <p><b>Hi, I’m Jack</b> and I am aspiring web developer currently studying Web Technologies at The University of Portsmouth; I really enjoy finding a new exciting web technologies and experimenting and playing with them. Such as web components, which allows exciting new ways to code for the web, such as custom elements and HTML imports. You can see some experiments I’ve done using Polymer on my Github. Recently I have been shifting my focus to not just coding but also graphic and UX design.</p>
+                    <p>Here are some of the technologies I am experienced with:</p>
+                    <ul>
+                        <li>
+                            <i class="fa fa-html5" aria-hidden="true"></i>
+                            <h3>HTML 5, CSS3 &#38; JS</h3>
+                        </li>
+                        <li>
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <h3>jQuery &#38; Other JS libraries, such as Polymer</h3>
+                        </li>
+                        <li>
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <h3>Git &#38; Github</h3>
+                        </li>
+                        <li>
+                            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                            <h3>Adobe Photoshop, Illustrator &#38; After Effects</h3>
+                        </li>
+                        <li>
+                            <i class="fa fa-terminal" aria-hidden="true"></i>
+                            <h3>node, npm, Bower &#38; Gulp</h3>
+                        </li>
+                        <li>
+                            <i class="fa fa-leaf" aria-hidden="true"></i>
+                            <h3>MongoDB &#38; Firebase NoSQL databases.</h3>
+                        </li>
+                        <li>
+                            <i class="fa fa-database" aria-hidden="true"></i>
+                            <h3>PHP &#38; MySQL databases.</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="social">
+            <div class="container">
+                <h1>Follow me here <i class="fa fa-caret-right" aria-hidden="true"></i>&#9;</h1>
+                <a href="https://uk.linkedin.com/in/jack-mason-669384107"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
+                <a href="https://github.com/mrsideshowjack"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/mrsideshowjack"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
+                <a href="http://stackoverflow.com/users/6625790/jack-mason"><i class="fa fa-stack-overflow fa-fw" aria-hidden="true"></i></a>
+                <a href="http://codepen.io/sideshowjack/"><i class="fa fa-codepen fa-fw" aria-hidden="true"></i></a> 
+            </div>
+        </section>
+
+        <section class="projects">
+                <h1>Projects</h1>
+                <p>Some recent projects I've been evolved in.</p>
+            <div class="container">
+                <div class="project"><a href="#" data-scrollto="splash">
+                    <img src="img/sideshowjack.png" alt="Sideshowjack.uk">
+                    <h2>sideshowjack.uk</h2>
+                    <p>My personal website you are currently browsing. Features JQuery, CSS key-frame animations, transitions, gradients and filters.</p>
+                    </a>
+                </div>
+                <div class="project"><a href="http://www.kn-i.com/blog/students/">
+                    <img src="img/kn-i.jpg" alt="KnowNow Information">
+                    <h2>Summer Project @ KnowNow Information</h2>
+                    <p>For three months during the summer of 2016, I worked as part of a small, self managed team, creating a minimal viable product for a business customer. I used and gained valuable experience with the following technologies: Google Polymer, nodeJS, express, mongoDB, gulp &#38; github</p>
+                    </a>
+                </div>
+                <div class="project"><a href="http://mooreprops.github.io/">
+                    <img src="img/moore-props.jpg" alt="Moore Props">
+                    <h2>Moore Props</h2>
+                    <p>A personal website project created for a art and prop design student.
+                        Features a JQuery slide-show along with a contact form.</p>
+                    </a>
+                </div>
+               <!--  <div class="project"><a href="http://www.tesltd.org/new/">
+                    <img src="img/tes.jpg" alt="Thorley Enviromental Systems<">
+                    <h2>Thorley Environmental Systems</h2>
+                    <p>A company website for an air conditioning installation company based out of Harlow. Features an image slide-show, contact form, mobile compatibility and JQuery result loading.</p>
+                    </a>
+                </div> -->
+                <div class="project"><a href="https://geo-draw.firebaseapp.com/">
+                    <img src="img/geo-draw.jpg" alt="Geo-Draw">
+                    <h2>Geo-Draw</h2>
+                    <p>A web app created as part of coursework to create a location based social network. Features Google Polymer library.</p>
+                </a>
+                </div>
+                <div class="project"><a href="https://side-note.firebaseapp.com/">
+                    <img src="img/side-note.jpg" alt="Side Note">
+                    <h2>Side note</h2>
+                    <p>A simple note taking progressive web app made using Polymer, service worker and Firebase. Also uses Google sign-in authentication, and offline support.</p>
+                </a>
+                </div>
+                <!-- <div class="project"><a href="http://mrsideshowjack.github.io/Keep-In-Time/">
+                    <img src="img/kit.png" alt="Keep In Time">
+                    <h2>Keep In Time</h2>
+                    <p>A web app created as part of group coursework to create a time management software able to create Gantt, WBT and PERT charts. Features JQuery and vis.js.</p>
+                </a>
+                </div> -->
+                <div class="project"><a href="http://imgur.com/a/K9D4G">
+                    <img src="img/its-a-stitch.jpg" alt="its-a-stitch">
+                    <h2>Brand Logo: It's a Stitch</h2>
+                    <p>A brand logo created for 'It's a Stitch' ; A bespoke hand crafts designer.</p>
+                </a>
+                </div>
+                <div class="project"><a href="https://sideshowchat.firebaseapp.com/">
+                    <img src="img/sideshowchat.PNG" alt="Sideshowchat">
+                    <h2>Sideshowchat</h2>
+                    <p>A real time instant messenger demo, created using Google Polymer library and noSQL real-time database.</p>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h1>Get in touch</h1>
+                <h2>Please feel free to email <a href="mailto:Jack.Mason1@myport.ac.uk">Jack.Mason1@myport.ac.uk</a></h2>
+
+                <form action="https://formspree.io/Jack.Mason1@myport.ac.uk" method="POST">
+                    <label class="input"><span>Name</span>
+                    <input type="text" name="name" required></label>
+
+                    <label class="input"><span>Email Address</span>
+                    <input type="email" name="_replyto" required></label>
+
+                    <label class="message"><span>Message</span>
+                    <textarea name="message" required></textarea></label>
+
+                    <label class="submit">
+                    <input type="submit" value="Send Message &#xf105;" class="btn" style="font-family:'Open Sans', 'FontAwesome';">
+                    </label>
+                </form>
+            </div>
+            <img class="footer-img" src="img/me-footer.png">
+        </section>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
