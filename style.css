@@ -114,7 +114,7 @@ section{
 }
 
 header{
-    background: #222;
+    background: #212121;
     padding: 0 20px;
     position: fixed;
     top: 0; left: 0;
@@ -341,9 +341,11 @@ header .toggle-menu{
     display: block;
     position: absolute;
     height: 50%;
-    top: 30%; right: 0px; bottom: 0px; left: 0px;
-    background: rgba(1,1,1,0.2);
+    width: 200%;
+    top: 30%; right: 0px; bottom: 0px; left: -50%;
+    background: rgba(1,1,1,0.06);
     z-index: -1;
+    transform: rotate(-25deg);
 }
 .projects > div{
     display: -webkit-box;
@@ -376,7 +378,11 @@ header .toggle-menu{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
+.projects .project h3{
+        color: #1EA6B3;
+    margin: 0.2em;
+    line-height: 1em;
+}
 .projects .project p{
     padding:   0 40px 0 40px;
 }
@@ -528,7 +534,7 @@ header .toggle-menu{
         bottom: 0;
         width: 100%;
         max-width: 300px;
-        background: #333;
+        background: #212121;
         transition: 200ms;
     }
     header nav.visible{
