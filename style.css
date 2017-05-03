@@ -266,7 +266,7 @@ header .toggle-menu{
     width: 50%;
     float: right;
 }
-.about > div > div > p{
+.about > div > div > article{
     margin-bottom: 40px;
 }
 .about:nth-of-type(even) > div > div{
