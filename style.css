@@ -417,8 +417,8 @@ header .toggle-menu {
 .about {
     background-color: var(--grey-color, #E6E6E6);
     /*FALLBACK*/
-    background: url(img/me-photo.jpg) no-repeat center center, -webkit-linear-gradient(left, var(--white-color, #fff), #DCDCDC, #A5A5A5);
-    background: url(img/me-photo.jpg) no-repeat center center, linear-gradient(90deg, var(--white-color, #fff), #DCDCDC, #A5A5A5);
+    background: url(img/me-photo.jpg) no-repeat center center, -webkit-linear-gradient(left, var(--white-color, #fff) 35%, var(--second-color, #1EA6B3));
+    background: url(img/me-photo.jpg) no-repeat center center, linear-gradient(90deg, var(--white-color, #fff) 35%, var(--second-color, #1EA6B3));
     background-size: cover;
     background-blend-mode: soft-light;
     position: relative;
@@ -486,7 +486,7 @@ header .toggle-menu {
     text-align: center;
     vertical-align: middle;
     padding-top: 10px;
-    border-radius: 25px;
+    border-radius: 50%;
     margin-right: 20px;
 }
 
