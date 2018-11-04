@@ -194,8 +194,8 @@ section {
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    color: var(--white-color, #fff);
-    border: 1px solid var(--white-color, #fff);
+    color: var(--black-color, #212121);
+    border: 1px solid var(--black-color, #212121);
     -webkit-transition: 200ms;
     transition: 200ms;
     background: transparent;
@@ -215,110 +215,13 @@ section {
     margin-left: 10px;
 }
 
-header {
-    background: var(--black-color, #212121);
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 200;
-}
-
-header .logo>h1 {
-    float: left;
-    font-family: 'Open Sans', sans-serif;
-    padding: 13px 0;
-    color: var(--second-color, #1EA6B3);
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 30px;
-    margin: 0;
-    display: inline-block;
-}
-
-header .logo-img {
-    float: left;
-    max-height: 35px;
-    max-width: 35px;
-    margin-top: 10px;
-    margin-right: 20px;
-}
-
-header nav {
-    float: right;
-}
-
-.menuItems {
-    padding: 0;
-    margin: 0;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.menuItems * {
-    box-sizing: border-box;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-}
-
-.menuItems li {
-    display: inline-block;
-    float: left;
-    list-style: outside none none;
-    margin: 0.7em 1.5em;
-    padding: 0;
-}
-
-.menuItems a {
-    padding: 0.3em 0;
-    color: rgba(255, 255, 255, 0.5);
-    position: relative;
-    text-decoration: none;
-}
-
-.menuItems a:before,
-.menuItems a:after {
-    height: 3px;
-    position: absolute;
-    content: '';
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-    background-color: var(--second-color, #1EA6B3);
-    width: 0;
-}
-
-.menuItems a:before {
-    top: 0;
-    right: 0;
-}
-
-.menuItems a:after {
-    bottom: 0;
-    left: 0;
-}
-
-.menuItems a:hover,
-.menuItems .current a {
-    color: var(--white-color, #fff);
-}
-
-.menuItems a:hover:before,
-.menuItems .current a:before,
-.menuItems a:hover:after,
-.menuItems .current a:after {
-    width: 100%;
-}
-
 header .toggle-menu {
     display: none;
 }
 
 .splash {
-    background: var(--main-color, #017783);
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23212121' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
-    box-shadow: inset 0 0 10px 0px var(--black-color, #212121);
-    height: 95vh;
+    background: linear-gradient(90deg, var(--white-color, #fff) 35%, var(--second-color, #1EA6B3));
+    height: 100vh;
     overflow: hidden;
     position: relative;
 }
@@ -327,30 +230,17 @@ header .toggle-menu {
     content: "";
     display: block;
     position: absolute;
-    top: -40px;
-    right: -40px;
-    bottom: -40px;
-    left: -40px;
-    background: rgba(255, 255, 255, 0.08);
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-    -webkit-animation: spin 60s infinite linear;
-    animation: spin 60s infinite linear;
-}
-
-.splash:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -40px;
-    right: -40px;
-    bottom: -40px;
-    left: -40px;
-    background: rgba(255, 255, 255, 0.08);
-    -webkit-transform: rotate(150deg);
-    transform: rotate(150deg);
-    -webkit-animation: spin2 50s infinite linear;
-    animation: spin2 50s infinite linear;
+    width: 25px;
+    height: 25px;
+    right: calc(50% - 12.5px);
+    bottom: 40px;
+    left: calc(50% - 12.5px);
+    border: 2px solid black;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: black;
+    border-bottom-color: black;
+    transform: rotate(45deg);
 }
 
 .splash .avatar {
@@ -394,7 +284,7 @@ header .toggle-menu {
 }
 
 .splash i a {
-    color: var(--grey-color, #E6E6E6);
+    color: var(--black-color, #212121);
 }
 
 .splash .btn {
@@ -404,7 +294,7 @@ header .toggle-menu {
 .splash-social a {
     display: inline;
     font-size: 2.5em;
-    color: var(--grey-color, #E6E6E6);
+    color: var(--black-color, #212121);
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     line-height: 2em;
@@ -492,36 +382,6 @@ header .toggle-menu {
 
 .about ul li p {
     overflow: hidden;
-}
-
-.social {
-    background: -webkit-linear-gradient( var(--main-color, #017783), transparent), -webkit-linear-gradient( left, #47A8ED, transparent), -webkit-linear-gradient( right, rgba(255, 232, 80, 0.5), transparent);
-    background: linear-gradient( var(--main-color, #017783), transparent), linear-gradient( 90deg, #47A8ED, transparent), linear-gradient( -90deg, rgba(255, 232, 80, 0.5), transparent);
-    background-blend-mode: screen;
-    text-align: center;
-    box-shadow: inset 0 0 20px 0px rgba(0, 0, 0, 0.5);
-}
-
-.social .container {
-    margin-bottom: 100px;
-}
-
-.social h1 {
-    color: var(--white-color, #fff);
-    display: inline;
-    font-size: 2.5em;
-}
-
-.social a {
-    display: inline;
-    font-size: 3em;
-    color: var(--grey-color, #E6E6E6);
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-.social a:hover {
-    color: var(--second-color, #1EA6B3);
 }
 
 .projects {

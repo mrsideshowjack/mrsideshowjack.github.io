@@ -56,6 +56,9 @@ Thanks for looking at my code!
     <meta name="msapplication-TileColor" content="#017783">
     <meta name="msapplication-TileImage" content="/img/icons/icon-144.png">
     <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
+    <!-- anime.js -->
+    <script src="anime.min.js"></script>
+
     <!-- ****** faviconit.com favicons ****** -->
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans:300,400,600" rel="stylesheet">
@@ -65,24 +68,6 @@ Thanks for looking at my code!
 </head>
 
 <body>
-
-    <header>
-        <div class="container">
-            <a class="logo" href="#" data-scrollto="splash">
-                <img class="logo-img" src="img/icons/logo.svg">
-                <h1>Jack Mason</h1>
-            </a>
-            <i class="fa fa-bars toggle-menu" aria-hidden="true"></i>
-            <nav>
-                <ul class="menuItems">
-                    <li><a href="http://sideshowjack.uk/blog/">Blog</a></li>
-                    <li><a href="#" data-scrollto="about">About</a></li>
-                    <li><a href="#" data-scrollto="projects">Projects</a></li>
-                    <li><a href="#" data-scrollto="contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
     <section class="splash">
         <div class="container">
@@ -109,10 +94,8 @@ Thanks for looking at my code!
                 <article>
                     <h1>About me</h1>
                     <p><b>Hi, I’m Jack</b> and I am web developer currently working for <a href="http://www.kn-i.com">Knownow-information</a>,
-                        I am also currently studying Web Technologies at The University of Portsmouth.</p>
-                    <p>I get to work on lots of exciting new projects, such as <a href="http://www.consentua.com">Consentua,</a>and I am always seeking new skils and improving my existing ones.</p>
-
-                    <!-- ; I really enjoy finding a new exciting web technologies and experimenting and playing with them. Such as web components, which allows exciting new ways to code for the web, such as custom elements and HTML imports. You can see some experiments I’ve done using Polymer on my Github. Recently I have been shifting my focus to not just coding but also graphic and UX design. </p>-->
+                    I have recently graduated from The University of Portsmouth, studying Web Technologies at .</p>
+                    <p>I get to work on lots of exciting new projects, such as <a href="http://www.consentua.com">Consentua, </a>and I am always seeking new skils and improving my existing ones.</p>
                     <p>Please feel free to contact me at <a href="mailto:contact@sideshowjack.uk">contact@sideshowjack.uk</a></p>
                     <p>Here are some of the technologies I am experienced with:</p>
                 </article>
@@ -123,7 +106,7 @@ Thanks for looking at my code!
                     </li>
                     <li>
                         <i class="fa fa-fw fa-code" aria-hidden="true"></i>
-                        <h3>Polymer, Jekyll  &#38; jQuery</h3>
+                        <h3>Vue.js Polymer.js, Jekyll  &#38; Other js libraries</h3>
                     </li>
                     <li>
                         <i class="fa fa-fw fa-github" aria-hidden="true"></i>
@@ -139,11 +122,11 @@ Thanks for looking at my code!
                     </li>
                     <li>
                         <i class="fa fa-fw fa-leaf" aria-hidden="true"></i>
-                        <h3>MongoDB &#38; Firebase NoSQL databases.</h3>
+                        <h3>MongoDB, SQL &#38; Firebase NoSQL databases.</h3>
                     </li>
                     <li>
                         <i class="fa fa-fw fa-cloud" aria-hidden="true"></i>
-                        <h3>IBM Bluemix, Watson, Cloud Foundry, IOT &#38; other cloud services </h3>
+                        <h3>IBM Cloud, Watson, Cloud Foundry &#38; Gcloud </h3>
                     </li>
                     <li>
                         <i class="fa fa-fw fa-shield" aria-hidden="true"></i>
@@ -154,18 +137,6 @@ Thanks for looking at my code!
         </div>
     </section>
 
-    <section class="social">
-        <div class="container">
-            <h1>Follow me here <i class="fa fa-hand-o-right" aria-hidden="true"></i>&#9;</h1>
-            <a href="https://twitter.com/mrsideshowjack"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
-            <a href="https://github.com/mrsideshowjack"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a>
-            <a href="https://uk.linkedin.com/in/jack-mason-669384107"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
-            <a href="http://stackoverflow.com/users/6625790/jack-mason"><i class="fa fa-stack-overflow fa-fw" aria-hidden="true"></i></a>
-            <a href="http://codepen.io/sideshowjack/"><i class="fa fa-codepen fa-fw" aria-hidden="true"></i></a>
-        </div>
-        <a class="twitter-timeline" data-width="550" data-height="550" data-link-color="#1EA6B3" href="https://twitter.com/mrsideshowjack">Tweets by mrsideshowjack</a>
-        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </section>
 
     <section class="projects">
         <h1>Projects</h1>
@@ -180,13 +151,6 @@ Thanks for looking at my code!
                         gradients and filters.</p>
                 </a>
             </div>
-<!--             <div class="project">
-                <a href="http://www.consentua.com">
-                    <img src="https://placehold.it/450x250/212121/fff?text=Personal+project" alt="Really cool personal project">
-                    <h2>Really cool personal project</h2>
-                    <p>I'm making something cool in my spare time at the moment, don't tell anyone ok? 😉</p>
-                </a>
-            </div> -->
             <div class="project">
                 <a href="http://www.consentua.com">
                     <img src="img/projects/consentua.JPG" alt="KnowNow Information">
@@ -198,12 +162,11 @@ Thanks for looking at my code!
                 </a>
             </div>
             <div class="project">
-                <a href="https://app.consentua.com">
-                    <img src="img/projects/consentua-dashboard.mybluemix.net-.png" alt="Consentua Dashboard">
-                    <h2>Consentua Dashboard</h2>
-                    <h3>app.consentua.com</h3>
-                    <p>Consentua dashboard is a user friendly way to access Consentua and its API created using Webcomponents
-                        + Polymer</p>
+                <a href="https://entelligently.com">
+                    <img src="img/projects/entelligently.jpg" alt="Consentua Dashboard">
+                    <h2>Entelligently</h2>
+                    <h3>entelligently.com</h3>
+                    <p>entelligently® improves the comfort of building users & reduces carbon emissions. The more you use entelligently® the more intelligent your building becomes.</p>
                 </a>
             </div>
             <div class="project">
@@ -223,48 +186,6 @@ Thanks for looking at my code!
                     <p>For three months during the summer of 2016, I worked as part of a small, self managed team, creating
                         a minimal viable product for a business customer. I used and gained valuable experience with the
                         following technologies: Google Polymer, nodeJS, express, mongoDB, gulp &#38; github</p>
-                </a>
-            </div>
-            <div class="project">
-                <a href="http://www.sideshowjack.uk/blog">
-                    <img src="img/projects/blog.JPG" alt="KnowNow Information">
-                    <h2>/blog</h2>
-                    <h3>sideshowjack.uk/blog</h3>
-                    <p>Simple jekyll, gh pages hosted, blog page attributed to this site, go there to read about what i'm up
-                        to.</p>
-                </a>
-            </div>
-            <!-- <div class="project"><a href="https://geo-draw.firebaseapp.com/">
-                    <img src="img/projects/geo-draw.jpg" alt="Geo-Draw">
-                    <h2>Geo-Draw</h2>
-                    <p>A web app created as part of coursework to create a location based social network. Features Google Polymer library.</p>
-                </a>
-                </div> -->
-            <div class="project">
-                <a href="https://side-note.firebaseapp.com/">
-                    <img src="img/projects/side-note.jpg" alt="Side Note">
-                    <h2>Side note</h2>
-                    <p>A simple note taking progressive web app made using Polymer, service worker and Firebase. Also uses Google
-                        sign-in authentication, and offline support.</p>
-                </a>
-            </div>
-            <!-- <div class="project"><a href="http://mrsideshowjack.github.io/Keep-In-Time/">
-                    <img src="img/projects/kit.png" alt="Keep In Time">
-                    <h2>Keep In Time</h2>
-                    <p>A web app created as part of group coursework to create a time management software able to create Gantt, WBT and PERT charts. Features JQuery and vis.js.</p>
-                </a>
-                </div> -->
-            <!-- <div class="project"><a href="http://imgur.com/a/K9D4G">
-                    <img src="img/projects/its-a-stitch.jpg" alt="its-a-stitch">
-                    <h2>Brand Logo: It's a Stitch</h2>
-                    <p>A brand logo created for 'It's a Stitch' ; A bespoke hand crafts designer.</p>
-                </a>
-                </div> -->
-            <div class="project">
-                <a href="https://sideshowchat.firebaseapp.com/">
-                    <img src="img/projects/sideshowchat.png" alt="Sideshowchat">
-                    <h2>Sideshowchat</h2>
-                    <p>A real time instant messenger demo, created using Google Polymer library and noSQL real-time database.</p>
                 </a>
             </div>
         </div>
@@ -292,6 +213,117 @@ Thanks for looking at my code!
         </div>
         <img class="footer-img" src="img/me-footer.png" alt="me">
     </section>
+    <script>
+    // anime.js
+
+var basicTimeline = anime.timeline();
+
+basicTimeline
+    .add({
+        targets: '.splash .avatar',
+        opacity: {
+            value: [0, 1],
+            duration: 600
+        },
+        translateY: {
+            value: [500, 0],
+            duration: 2000
+        },
+        rotate: {
+            value: [45, 0],
+            duration: 600
+        },
+        easing: 'easeInOutQuart',
+    })
+    .add({
+        targets: '.splash h1',
+        translateX: {
+            value: [250, 0],
+            duration: 2000
+        },
+        opacity: {
+            value: [0, 1],
+            duration: 500
+        },
+        easing: 'easeInOutQuart',
+    })
+    .add({
+        targets: '.splash .btn',
+        translateY: [250, 0],
+        opacity: [0, 1],
+        duration: 600,
+        easing: 'easeOutExpo',
+        offset: '-=100'
+    })
+    .add({
+        targets: '.splash h2',
+        translateY: [250, 0],
+        opacity: [0, 1],
+        duration: 600,
+        easing: 'easeOutExpo',
+        offset: '-=100'
+    })
+    .add({
+        targets: '.splash .splash-social .fa-twitter',
+        translateX: [50, 0],
+        opacity: [0, 1],
+        duration: 300,
+        easing: 'easeOutExpo',
+        offset: '-=100'
+    })
+    .add({
+        targets: '.splash .splash-social .fa-github',
+        translateX: [50, 0],
+        opacity: [0, 1],
+        duration: 300,
+        easing: 'easeOutExpo',
+        offset: '-=100'
+    })
+    .add({
+        targets: '.splash .splash-social .fa-linkedin',
+        translateX: [50, 0],
+        opacity: [0, 1],
+        duration: 300,
+        easing: 'easeOutExpo',
+        offset: '-=100'
+    })
+    .add({
+        targets: '.splash .splash-social .fa-stack-overflow',
+        translateX: [50, 0],
+        opacity: [0, 1],
+        duration: 300,
+        easing: 'easeOutExpo',
+        offset: '-=100'
+    })
+    .add({
+        targets: '.splash .splash-social .fa-codepen',
+        translateX: [50, 0],
+        opacity: [0, 1],
+        duration: 300,
+        easing: 'easeOutExpo',
+        offset: '-=100'
+    })
+    .add({
+        targets: '.splash .fa.fa-hand-paper-o',
+        rotate: 60,
+        duration: 600,
+        delay: 1000,
+        easing: 'easeInOutQuart',
+        elasticity: function (el, i, l) {
+            return (200 + i * 200);
+        }
+    })
+    .add({
+        targets: '.splash .fa.fa-hand-paper-o',
+        rotate: 0,
+        duration: 600,
+        easing: 'easeInOutQuart',
+        offset: '-=200',
+        elasticity: function (el, i, l) {
+            return (200 + i * 200);
+        }
+    });
+    </script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="script.js"></script>
     <script>
